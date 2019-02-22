@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz Board</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h1>Courses</h1>
+            </div>
+            <ul>
+              <li>Html</li>
+              <li>JavaScript</li>
+              <li>JQuery</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-10">
+          <div class="jumbotron">
+            <h1>JavaScript Quiz</h1>
+            <p>After submiting the quiz, you will immediately be graded and awarded. Have fun!</P>
+<!--
+            <div id="blanks">
+              <form>
+                <div class="input-group">
+                  <label for="queOne">1. Is JavaScript a programming language or a scripting language?</label>
+                    <span class="input-group-addon"><input type="radio" name="a" value=" " id ="queOne" checked>A programming language</span>
+                    <span class="input-group-addon"><input type="radio" name="a" value=" " id ="queTwo">A scripting language</span>
+                </div>
+
+
+            <div class="input-group">
+                  <label for="queTwo">2. Which is the correct way of creating a function in JavaScript?</label>
+                    <span class="input-group-addon"><input type="radio" name="b" value=" " id ="queThree" checked>A programming language</span>
+                    <span class="input-group-addon"><input type="radio" name="b" value=" " id ="queFour" checked>A programming language</span>
+                    <span class="input-group-addon"><input type="radio" name="b" value=" " id ="queFive" checked>A programming language</span>
+            </div>
+          </form>
+        </div>
+-->
+
+              <div id="answers">
+                <form>
+                  <legend>1. Is JavaScript a programming language or a scripting language?</legend>
+                    <input type="radio" id="queOne" name="a" checked>A programming language<br>
+                    <input type="radio" id ="queTwo" name="a">A scripting language
+
+                    <legend>2. Which is the correct way of creating a function in JavaScript?</legend>
+                      <input type="radio" id ="funOne" name="b"checked>function:FunctionMy()<br><br>
+                      <input type="radio" id ="funTwo" name="b">function = myFunction()<br><br>
+                      <input type="radio" id ="funthree" name="b">function,myFunction()<br><br>
+
+                    <legend>3. How do you call a function named "myFunction"?</legend>
+                      <input type="radio" id ="callOne" name="c"checked>Call FunctionMy()<br><br>
+                      <input type="radio" id ="callTwo" name="c">myFunction()<br><br>
+                      <input type="radio" id ="callThree" name="c">myFunction(call)<br><br>
+                      <!-- <input type="button" name="b" onclick="myFunction()"value="Submit"> -->
+                    <button type="submit" class="btn">Done</button>
+                </form>
+              </div>
+              <div id="answers">
+                <h1>Your answers were as follow:</h1>
+                <p>Question 1:<span class="queOne"></span>Question 2:<span class="queTwo"></span> Question 3: <span class="funOne"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
