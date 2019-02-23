@@ -14,27 +14,22 @@ $(document).ready(function() {
 
     $(#results).text("");
     var CorAnsPoints = 0;
-    var queOneInput = $("input:radio[name=queOne]:checked").val();
-    var queTwoInput = $("input:radio[name=fun]:checked").val();
-    var queThreeInput = $("input:radio[name=callFun]:checked").val();
+    var queOneInput = $("input:radio[name=queOne]:checked").val());
+    var queTwoInput = $("input:radio[name=fun]:checked").val());
+    var queThreeInput = $("input:radio[name=callFun]:checked").val());
 
-    if(queOneInput){
-
+    if(queOneInput ===CorAns[0]){
+      CorAnsPoints += CorAnsPoints;
+    }
+    if(queTwoInput ===CorAns[1]){
+      CorAnsPoints += CorAnsPoints;
+    }
+    if(queThreeInput ===CorAns[2]){
+      CorAnsPoints += CorAnsPoints;
     }
 
-
-
-
-
-
-$(".a").radio(queOneInput);
-$(".queTwo").radio(queTwoInput);
-$(".funOne").radio(funOneInput);
-$(".funTwo").radio(funTwoInput);
-$(".funthree").radio(funthreeInput);
-
-$("#results").show();
-
-event.preventDefault();
-});
+    $("#results").text(percentage(grade));
+}
+    event.preventDefault();
+  });
 });
