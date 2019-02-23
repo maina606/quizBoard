@@ -10,13 +10,14 @@ function percentage(grade){
 /* ---------------------- Form------------------------------*/
 
 $(document).ready(function() {
-  $("#answers").submit(function(event) {
+  $("#queAns").submit(function(event) {
 
-    $(#results).text("");
+    $(#results).text(" ");
+
     var CorAnsPoints = 0;
-    var queOneInput = $("input:radio[name=queOne]:checked").val());
-    var queTwoInput = $("input:radio[name=fun]:checked").val());
-    var queThreeInput = $("input:radio[name=callFun]:checked").val());
+    var queOneInput = $("input[type=radio][name=queOne]:checked").val());
+    var queTwoInput = $("input[type=radio][name=fun]:checked").val());
+    var queThreeInput = $("input[type=radio][name=callFun]:checked").val());
 
     if(queOneInput ===CorAns[0]){
       CorAnsPoints += CorAnsPoints;
