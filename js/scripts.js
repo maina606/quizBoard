@@ -1,30 +1,40 @@
 /* ----------------------Business Logic - Functionality------------------------------*/
-var correctAns = function(){
-  if(){
-    return ;
-  }
+var CorAns = ["script","funB","callFunB"];
+var CorAnsPoints = 10;
+
+function percentage(grade){
+  return "You have scored " + parseInt(grade / 30) *100) + "%";
 }
 
-/* ---------------User Logic - user interaction with the Front-end part ----------------*/
+/* ---------------User Logic - Front-end part ----------------*/
 /* ---------------------- Form------------------------------*/
 
 $(document).ready(function() {
-    $("#answers form").submit(function(event) {
-      var queOneInput = $("#input.queOne:checked").val();
-      var queTwoInput = $("#input.queTwo:checked").val();
-      var funOneInput = $("#input.funOne:checked").val();
-      var funTwoInput = $("#input.funTwo:checked").val();
-      var funthreeInput = $("#input.funthree:checked").val();
+  $("#answers").submit(function(event) {
 
-      $(".queOne").radio(queOneInput);
-      $(".queTwo").radio(queTwoInput);
-      $(".funOne").radio(funOneInput);
-      $(".funTwo").radio(funTwoInput);
-      $(".funthree").radio(funthreeInput);
+    $(#results).text("");
+    var CorAnsPoints = 0;
+    var queOneInput = $("input:radio[name=queOne]:checked").val();
+    var queTwoInput = $("input:radio[name=fun]:checked").val();
+    var queThreeInput = $("input:radio[name=callFun]:checked").val();
+
+    if(queOneInput){
+
+    }
 
 
-        $("#results").show();
 
-        event.preventDefault();
-    });
+
+
+
+$(".a").radio(queOneInput);
+$(".queTwo").radio(queTwoInput);
+$(".funOne").radio(funOneInput);
+$(".funTwo").radio(funTwoInput);
+$(".funthree").radio(funthreeInput);
+
+$("#results").show();
+
+event.preventDefault();
+});
 });
