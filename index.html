@@ -4,6 +4,8 @@
     <title>Quiz Board</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
     </head>
   <body>
     <div class="container">
@@ -24,29 +26,26 @@
           <div class="jumbotron">
             <h1>JavaScript Quiz</h1>
             <p>After submiting the quiz, you will immediately be graded and awarded. Have fun!</P>
-              <!-- <div id="answers"> -->
                 <form id="queAns">
                     <legend>1. Is JavaScript a programming language or a scripting language?</legend>
-                      <input type="radio"  name="queOne" value="prog" checked>A programming language<br><br>
+                      <input type="radio"  name="queOne" value="prog">A programming language<br><br>
                       <input type="radio"  name="queOne" value="script">A scripting language<br><br>
 
                     <legend>2. Which is the correct way of creating a function in JavaScript?</legend>
-                      <input type="radio" name="fun" value="funA" checked>function:FunctionMy()<br><br>
+                      <input type="radio" name="fun" value="funA">function:FunctionMy()<br><br>
                       <input type="radio" name="fun" value="funB">function = myFunction()<br><br>
                       <input type="radio" name="fun" value="funC">function,myFunction()<br><br>
 
                     <legend>3. How do you call a function named "myFunction"?</legend>
-                      <input type="radio" name="callFun" value="callFunA" checked>Call FunctionMy()<br><br>
+                      <input type="radio" name="callFun" value="callFunA">Call FunctionMy()<br><br>
                       <input type="radio" name="callFun" value="callFunB">myFunction()<br><br>
                       <input type="radio" name="callFun" value="callFunC">myFunction(call)<br><br>
                       <!-- <input type="button" name="b" onclick="myFunction()"value="Submit"> -->
                     <button type="submit" class="submit">SUBMIT</button>
                 </form>
               </div>
-              <!-- <div id="answers"> -->
               <div id ="results">
                 <h1>Your answers were as follow:</h1>
-                <p>Question 1: <span class="queOne"></span>Question 2:<span class="queTwo"></span> Question 3: <span class="funOne"></span></p>
             </div>
 
             </div>
@@ -54,7 +53,6 @@
         </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+
   </body>
 </html>
