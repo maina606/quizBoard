@@ -24,7 +24,7 @@ This is version 1.0.01 and any up-to-date device should be able to do the work.
 
 | Behaviour our program should handle           | Input           | Output                        |
 | ----------------------------------------------|-----------------| ------------------------------|
-| Website loads                                 | None            | Multi-choice answers          |                            | No questions answered                         | None            | please complete the questions |                      |   | All ques. answered correctly                  | "a",'b', 'c'    | 30 points plus Grading        |                   |   
+| Website loads                                 | None            | Multi-choice answers          |                            | No questions answered                         | None            | please complete the questions |                           |All ques. answered correctly                   | "a",'b', 'c'    | 30 points plus Grading        |                     
 | All ques. answered wrongly                    | 'b','a','b'     | 0 points plus Grading         |
                                                         
                                                                                      
