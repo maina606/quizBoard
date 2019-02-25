@@ -22,37 +22,37 @@
             </ul>
           </div>
         </div>
+
         <div class="col-md-10">
           <div class="jumbotron">
             <h1>JavaScript Quiz</h1>
             <p>After submiting the quiz, you will immediately be graded and awarded. Have fun!</P>
-                <form id="queAns">
-                    <legend>1. Is JavaScript a programming language or a scripting language?</legend>
-                      <input type="radio"  name="queOne" value="prog">A programming language<br><br>
-                      <input type="radio"  name="queOne" value="script">A scripting language<br><br>
+            <form id="queAns">
+              <legend>1. Is JavaScript a programming language or a scripting language?</legend>
+              <label><input type="radio"  name="queOne" value="prog" required>A programming language</label><br><br>
+              <input type="radio"  name="queOne" value="script">A scripting language<br><br>
 
-                    <legend>2. Which is the correct way of creating a function in JavaScript?</legend>
-                      <input type="radio" name="fun" value="funA">function:FunctionMy()<br><br>
-                      <input type="radio" name="fun" value="funB">function = myFunction()<br><br>
-                      <input type="radio" name="fun" value="funC">function,myFunction()<br><br>
+              <legend>2. Which is the correct way of creating a function in JavaScript?</legend>
+              <input type="radio" name="fun" value="funA" required>function:FunctionMy()<br><br>
+              <input type="radio" name="fun" value="funB">function = myFunction()<br><br>
+              <input type="radio" name="fun" value="funC">function,myFunction()<br><br>
 
-                    <legend>3. How do you call a function named "myFunction"?</legend>
-                      <input type="radio" name="callFun" value="callFunA">Call FunctionMy()<br><br>
-                      <input type="radio" name="callFun" value="callFunB">myFunction()<br><br>
-                      <input type="radio" name="callFun" value="callFunC">myFunction(call)<br><br>
-                      <!-- <input type="button" name="b" onclick="myFunction()"value="Submit"> -->
-                    <button type="submit" class="submit">SUBMIT</button>
-                </form>
-              </div>
-              <div id ="results">
-                <h1>Your answers were as follow:</h1>
+              <legend>3. How do you call a function named "myFunction"?</legend>
+              <input type="radio" name="callFun" value="callFunA" required>Call FunctionMy()<br><br>
+              <input type="radio" name="callFun" value="callFunB">myFunction()<br><br>
+              <input type="radio" name="callFun" value="callFunC">myFunction(call)<br><br>
+              <!-- <input type="button" name="b" onclick="myFunction()"value="Submit"> -->
+              <button type="submit">SUBMIT</button>
+            </form>
             </div>
 
+            <div id ="results">
+                <h1></h1>
+            </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </body>
 </html>
